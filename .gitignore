@@ -1,0 +1,39 @@
+# Compiled class files
+target/
+*.class
+
+# Maven logs
+mvnw.log
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment and Secrets
+.env
+application.properties
+application.yml
+
+# Java
+*.war
+*.jar
+
+# Generated files
+bin/
+out/
+
+# Test Reports
+surefire-reports/
+test-output/

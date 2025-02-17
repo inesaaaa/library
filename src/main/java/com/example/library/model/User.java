@@ -4,9 +4,9 @@ package com.example.library.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
 @Getter
 @Setter
+@Entity
 @Table(name = "users")
 public class User {
 
@@ -16,7 +16,7 @@ public class User {
 
     // nullable false means that this row cant be empty
     @Column(nullable = false)
-    private String name;
+    public String name;
 
 
     @Column(nullable = false, unique = true)
@@ -24,24 +24,8 @@ public class User {
 
     private String email;
 
-
     private String password;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
     // Can be ADMIN or USER
     private String role;
 }

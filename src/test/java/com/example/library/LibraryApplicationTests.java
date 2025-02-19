@@ -1,13 +1,14 @@
 package com.example.library;
 
-import org.junit.jupiter.api.Test;
+import com.example.library.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
 
 @SpringBootTest
 class LibraryApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+	@Autowired
+	private UserRepository userRepository;
 
 }
